@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillcheck"
+version = "0.1.0"
+description = "Offline heuristic static linter for agent skill folders"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+skillcheck = "skillcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
